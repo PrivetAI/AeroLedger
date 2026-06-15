@@ -32,7 +32,7 @@ final class GameStore: ObservableObject {
         ]
         GameEngine.refreshHirePool(&s)
         GameEngine.queueEvent(&s)
-        GameEngine.addNews(&s, "Welcome to Sky Harbor. Open your first routes and advance the week.", positive: true)
+        GameEngine.addNews(&s, "Welcome to Skyport. Open your first routes and advance the week.", positive: true)
         return s
     }
 

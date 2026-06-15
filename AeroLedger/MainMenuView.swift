@@ -22,11 +22,11 @@ struct MainMenuView: View {
                     }
                     .padding(.bottom, 22)
 
-                    Text("SKY HARBOR")
+                    Text("AERO")
                         .font(.system(size: 34, weight: .heavy))
                         .tracking(5)
                         .foregroundColor(Brand.jet)
-                    Text("T Y C O O N")
+                    Text("L E D G E R")
                         .font(.system(size: 15, weight: .semibold))
                         .tracking(8)
                         .foregroundColor(Brand.sky)

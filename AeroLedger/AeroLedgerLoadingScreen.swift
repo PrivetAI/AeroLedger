@@ -26,11 +26,11 @@ struct AeroLedgerLoadingScreen: View {
                         .animation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true), value: pulse)
                 }
 
-                Text("SKY HARBOR")
+                Text("AERO")
                     .font(.system(size: 24, weight: .heavy))
                     .tracking(4)
                     .foregroundColor(Brand.jet)
-                Text("T Y C O O N")
+                Text("L E D G E R")
                     .font(.system(size: 13, weight: .semibold))
                     .tracking(6)
                     .foregroundColor(Brand.sky)

@@ -5,7 +5,7 @@ struct OnboardingView: View {
     @State private var page = 0
 
     private let pages: [(String, String, AnyView)] = [
-        ("Build Your Sky Harbor",
+        ("Build Your Skyport",
          "Construct and upgrade eight facility categories — terminals, runways, lounges, retail, hotels, cargo, hangars and fuel farms. Each tier and level raises capacity and income but also weekly upkeep.",
          AnyView(StrokedIcon(shape: GridIcon(), color: Brand.sky, size: 64, line: 3))),
         ("Fly the Network",
@@ -15,7 +15,7 @@ struct OnboardingView: View {
          "Hire staff, advance research, take loans, and survive random events. Every Advance Week tick auto-simulates demand, runs all flights and updates your books.",
          AnyView(StrokedIcon(shape: CoinIcon(), color: Brand.amber, size: 64, line: 3))),
         ("Grow Your Reputation",
-         "Passenger satisfaction and prestige unlock premium long-haul routes and partnerships. Climb six prestige ranks from Local Airfield to Global Sky Harbor.",
+         "Passenger satisfaction and prestige unlock premium long-haul routes and partnerships. Climb six prestige ranks from Local Airfield to Global Skyport.",
          AnyView(StrokedIcon(shape: TrophyIcon(), color: Brand.green, size: 64, line: 3))),
         ("Reach Your Goals",
          "Chase 20 contracts and 24 achievements. Track everything in Statistics. Tap Advance Week to begin — your first weeks are designed to be solvable, so experiment freely.",

@@ -43,7 +43,7 @@ enum PrestigeCatalog {
         PrestigeRank(name: "National Gateway", threshold: 5_000),
         PrestigeRank(name: "Continental Port", threshold: 16_000),
         PrestigeRank(name: "International Hub", threshold: 45_000),
-        PrestigeRank(name: "Global Sky Harbor", threshold: 110_000),
+        PrestigeRank(name: "Global Skyport", threshold: 110_000),
     ]
     static func rankIndex(for points: Double) -> Int {
         var idx = 0
@@ -74,7 +74,7 @@ enum ContractCatalog {
         ContractDef(id: "ct_17", title: "Happy Travelers", detail: "Reach 90% satisfaction.", reward: 1_300_000, metric: .satisfaction, target: 0.90),
         ContractDef(id: "ct_18", title: "Intercontinental", detail: "Open 10 intercontinental routes.", reward: 2_500_000, metric: .intercontinentalRoutes, target: 10),
         ContractDef(id: "ct_19", title: "Half-Million Flyers", detail: "Carry 500K weekly passengers.", reward: 3_000_000, metric: .weeklyPassengers, target: 500_000),
-        ContractDef(id: "ct_20", title: "Sky Empire", detail: "Reach Global Sky Harbor prestige.", reward: 6_000_000, metric: .prestige, target: 5),
+        ContractDef(id: "ct_20", title: "Sky Empire", detail: "Reach Global Skyport prestige.", reward: 6_000_000, metric: .prestige, target: 5),
     ]
 }
 
@@ -104,6 +104,6 @@ enum AchievementCatalog {
         AchievementDef(id: "a_21", title: "Five Star", desc: "Reach 95% satisfaction.", metric: .satisfaction, target: 0.95),
         AchievementDef(id: "a_22", title: "Mega Carrier", desc: "Carry 600K weekly passengers.", metric: .weeklyPassengers, target: 600_000),
         AchievementDef(id: "a_23", title: "Tech Tree", desc: "Complete all 14 research nodes.", metric: .researchDone, target: 14),
-        AchievementDef(id: "a_24", title: "Sky Harbor", desc: "Reach Global Sky Harbor prestige.", metric: .prestige, target: 5),
+        AchievementDef(id: "a_24", title: "Skyport", desc: "Reach Global Skyport prestige.", metric: .prestige, target: 5),
     ]
 }
