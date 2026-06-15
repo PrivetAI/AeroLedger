@@ -1,7 +1,7 @@
 import SwiftUI
 import WebKit
 
-struct SkyHarborWebPanel: UIViewRepresentable {
+struct AeroLedgerWebPanel: UIViewRepresentable {
     let urlString: String
 
     func makeUIView(context: Context) -> WKWebView {

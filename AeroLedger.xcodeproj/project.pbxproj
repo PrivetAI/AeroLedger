@@ -31,9 +31,9 @@
 		E4B60649C682520482BE2CA1 /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D956D8448D672CC44D05CD7 /* RoutesView.swift */; };
 		8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */; };
 		3261BA248D0D185F3310D0E2 /* SharedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D2044C52C908D941580A0 /* SharedUI.swift */; };
-		3A0331FD0393AAFC6DFBAF53 /* SkyHarborLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32B3B99E5965FDB643DB82 /* SkyHarborLoadingScreen.swift */; };
-		0C95FDC31A1DEE9F504BBF93 /* SkyHarborTycoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D9E852B605884E1C3F136 /* SkyHarborTycoonApp.swift */; };
-		1EE2713B57780F6D6F39C0ED /* SkyHarborWebPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FE7EFDB3D9148EAA6BDE2 /* SkyHarborWebPanel.swift */; };
+		3A0331FD0393AAFC6DFBAF53 /* AeroLedgerLoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E32B3B99E5965FDB643DB82 /* AeroLedgerLoadingScreen.swift */; };
+		0C95FDC31A1DEE9F504BBF93 /* AeroLedgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D9E852B605884E1C3F136 /* AeroLedgerApp.swift */; };
+		1EE2713B57780F6D6F39C0ED /* AeroLedgerWebPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8FE7EFDB3D9148EAA6BDE2 /* AeroLedgerWebPanel.swift */; };
 		038C0B5BD122E26AF1E2605D /* StaffBonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FE960F088BF84F1C07F1A /* StaffBonus.swift */; };
 		E94AD60438C76FB08BB4B194 /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410291287F5EC0E703AC6B24 /* StaffView.swift */; };
 		BE30B77B93B5337EE9925BE8 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E373A4685602AF82D26E94 /* StatisticsView.swift */; };
@@ -67,9 +67,9 @@
 		7D956D8448D672CC44D05CD7 /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutesView.swift"; sourceTree = "<group>"; };
 		B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
 		B26D2044C52C908D941580A0 /* SharedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedUI.swift"; sourceTree = "<group>"; };
-		6E32B3B99E5965FDB643DB82 /* SkyHarborLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkyHarborLoadingScreen.swift"; sourceTree = "<group>"; };
-		900D9E852B605884E1C3F136 /* SkyHarborTycoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkyHarborTycoonApp.swift"; sourceTree = "<group>"; };
-		FD8FE7EFDB3D9148EAA6BDE2 /* SkyHarborWebPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkyHarborWebPanel.swift"; sourceTree = "<group>"; };
+		6E32B3B99E5965FDB643DB82 /* AeroLedgerLoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AeroLedgerLoadingScreen.swift"; sourceTree = "<group>"; };
+		900D9E852B605884E1C3F136 /* AeroLedgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AeroLedgerApp.swift"; sourceTree = "<group>"; };
+		FD8FE7EFDB3D9148EAA6BDE2 /* AeroLedgerWebPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AeroLedgerWebPanel.swift"; sourceTree = "<group>"; };
 		1C4FE960F088BF84F1C07F1A /* StaffBonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StaffBonus.swift"; sourceTree = "<group>"; };
 		410291287F5EC0E703AC6B24 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StaffView.swift"; sourceTree = "<group>"; };
 		D5E373A4685602AF82D26E94 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticsView.swift"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		6BE6472535581029A6A3950E /* WeekResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeekResultView.swift"; sourceTree = "<group>"; };
 		58F02208A1E6A99468703A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D644AFBB5A54E9F05256CDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A97C29AD63741CF438998CE6 /* Sky Harbor Tycoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sky Harbor Tycoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97C29AD63741CF438998CE6 /* AeroLedger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AeroLedger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		5928955287B8089ED2177128 = {
 			isa = PBXGroup;
 			children = (
-				1849FC21AAEE98122148FC2B /* Sky Harbor Tycoon */,
+				1849FC21AAEE98122148FC2B /* AeroLedger */,
 				D59F6469233080B6364F20D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,12 +102,12 @@
 		D59F6469233080B6364F20D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A97C29AD63741CF438998CE6 /* Sky Harbor Tycoon.app */,
+				A97C29AD63741CF438998CE6 /* AeroLedger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1849FC21AAEE98122148FC2B /* Sky Harbor Tycoon */ = {
+		1849FC21AAEE98122148FC2B /* AeroLedger */ = {
 			isa = PBXGroup;
 			children = (
 				CBEB3E07F7F59302A97636F0 /* AirportOverviewView.swift */,
@@ -134,9 +134,9 @@
 				7D956D8448D672CC44D05CD7 /* RoutesView.swift */,
 				B21A48F4CE5EDCAA60D410E3 /* SettingsView.swift */,
 				B26D2044C52C908D941580A0 /* SharedUI.swift */,
-				6E32B3B99E5965FDB643DB82 /* SkyHarborLoadingScreen.swift */,
-				900D9E852B605884E1C3F136 /* SkyHarborTycoonApp.swift */,
-				FD8FE7EFDB3D9148EAA6BDE2 /* SkyHarborWebPanel.swift */,
+				6E32B3B99E5965FDB643DB82 /* AeroLedgerLoadingScreen.swift */,
+				900D9E852B605884E1C3F136 /* AeroLedgerApp.swift */,
+				FD8FE7EFDB3D9148EAA6BDE2 /* AeroLedgerWebPanel.swift */,
 				1C4FE960F088BF84F1C07F1A /* StaffBonus.swift */,
 				410291287F5EC0E703AC6B24 /* StaffView.swift */,
 				D5E373A4685602AF82D26E94 /* StatisticsView.swift */,
@@ -145,13 +145,13 @@
 				58F02208A1E6A99468703A4E /* Assets.xcassets */,
 				D644AFBB5A54E9F05256CDF1 /* Info.plist */,
 			);
-			path = "Sky Harbor Tycoon";
+			path = "AeroLedger";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42AEFBAE01D2DFD981F7DA7D /* Sky Harbor Tycoon */ = {
+		42AEFBAE01D2DFD981F7DA7D /* AeroLedger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2857F3DA31A2E77D5F204763 /* Build configuration list for PBXNativeTarget */;
 			buildPhases = (
@@ -163,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = "Sky Harbor Tycoon";
-			productName = "Sky Harbor Tycoon";
-			productReference = A97C29AD63741CF438998CE6 /* Sky Harbor Tycoon.app */;
+			name = "AeroLedger";
+			productName = "AeroLedger";
+			productReference = A97C29AD63741CF438998CE6 /* AeroLedger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42AEFBAE01D2DFD981F7DA7D /* Sky Harbor Tycoon */,
+				42AEFBAE01D2DFD981F7DA7D /* AeroLedger */,
 			);
 		};
 /* End PBXProject section */
@@ -241,9 +241,9 @@
 				E4B60649C682520482BE2CA1 /* RoutesView.swift in Sources */,
 				8139624898A349ADA4ED5613 /* SettingsView.swift in Sources */,
 				3261BA248D0D185F3310D0E2 /* SharedUI.swift in Sources */,
-				3A0331FD0393AAFC6DFBAF53 /* SkyHarborLoadingScreen.swift in Sources */,
-				0C95FDC31A1DEE9F504BBF93 /* SkyHarborTycoonApp.swift in Sources */,
-				1EE2713B57780F6D6F39C0ED /* SkyHarborWebPanel.swift in Sources */,
+				3A0331FD0393AAFC6DFBAF53 /* AeroLedgerLoadingScreen.swift in Sources */,
+				0C95FDC31A1DEE9F504BBF93 /* AeroLedgerApp.swift in Sources */,
+				1EE2713B57780F6D6F39C0ED /* AeroLedgerWebPanel.swift in Sources */,
 				038C0B5BD122E26AF1E2605D /* StaffBonus.swift in Sources */,
 				E94AD60438C76FB08BB4B194 /* StaffView.swift in Sources */,
 				BE30B77B93B5337EE9925BE8 /* StatisticsView.swift in Sources */,
@@ -317,14 +317,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Sky Harbor Tycoon/Info.plist";
+				INFOPLIST_FILE = "AeroLedger/Info.plist";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyharbortycoon.app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aeroledger.app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -347,14 +347,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Sky Harbor Tycoon/Info.plist";
+				INFOPLIST_FILE = "AeroLedger/Info.plist";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyharbortycoon.app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aeroledger.app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

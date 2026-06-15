@@ -55,7 +55,7 @@ struct StatisticsView: View {
 struct GuideView: View {
     var body: some View {
         ScreenScaffold("How to Play") {
-            guideSection("The Weekly Tick", "Sky Harbor Tycoon is turn-based. Each time you tap Advance Week on the Airport screen, the game auto-simulates demand, runs every booked flight, and computes revenue and expenses. There is no real-time flying — depth comes from the interacting economic systems.")
+            guideSection("The Weekly Tick", "AeroLedger is turn-based. Each time you tap Advance Week on the Airport screen, the game auto-simulates demand, runs every booked flight, and computes revenue and expenses. There is no real-time flying — depth comes from the interacting economic systems.")
             guideSection("Facilities", "Eight facility categories each have 4 tiers and 5 levels. Terminals set passenger capacity, runways gate aircraft size and add flight cycles, lounges/retail/hotels add revenue, cargo depots boost freight, hangars cut wear, and fuel farms cut fuel cost. Upgrades raise upkeep, so grow sustainably.")
             guideSection("Fleet & Routes", "Buy or lease 12 aircraft models across Regional, Narrowbody and Widebody classes. Open routes to 26 cities — each gated by aircraft range, runway tier, and your prestige rank. Assign aircraft to routes and set Economy, Business and First fares. Pricing near the reference fare maximizes load factor.")
             guideSection("Staff & Research", "Hire six staff roles in three rarities for stacking percentage bonuses. The hiring pool refreshes every few weeks. Research a 14-node tree to unlock larger aircraft support, fuel tech, premium services, marketing and automation.")

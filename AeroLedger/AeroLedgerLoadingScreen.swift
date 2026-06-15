@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SkyHarborLoadingScreen: View {
+struct AeroLedgerLoadingScreen: View {
     @State private var pulse = false
     @State private var sweep = false
 
