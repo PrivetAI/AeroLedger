@@ -53,8 +53,13 @@ struct StatisticsView: View {
 }
 
 struct GuideView: View {
+    var onClose: (() -> Void)? = nil
     var body: some View {
-        ScreenScaffold("How to Play") {
+        ScreenScaffold("How to Play", trailing: onClose.map { close in
+            AnyView(Button(action: close) {
+                Text("Done").font(.system(size: 15, weight: .semibold)).foregroundColor(Brand.sky)
+            })
+        }) {
             guideSection("The Weekly Tick", "AeroLedger is turn-based. Each time you tap Advance Week on the Airport screen, the game auto-simulates demand, runs every booked flight, and computes revenue and expenses. There is no real-time flying — depth comes from the interacting economic systems.")
             guideSection("Facilities", "Eight facility categories each have 4 tiers and 5 levels. Terminals set passenger capacity, runways gate aircraft size and add flight cycles, lounges/retail/hotels add revenue, cargo depots boost freight, hangars cut wear, and fuel farms cut fuel cost. Upgrades raise upkeep, so grow sustainably.")
             guideSection("Fleet & Routes", "Buy or lease 12 aircraft models across Regional, Narrowbody and Widebody classes. Open routes to 26 cities — each gated by aircraft range, runway tier, and your prestige rank. Assign aircraft to routes and set Economy, Business and First fares. Pricing near the reference fare maximizes load factor.")

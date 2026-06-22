@@ -4,6 +4,7 @@ struct AirportOverviewView: View {
     @EnvironmentObject var store: GameStore
     let onExitToMenu: () -> Void
     @State private var showEvent = false
+    @State private var showExitConfirm = false
 
     private var pendingEvent: GameEventDef? {
         guard let id = store.state.pendingEventID else { return nil }
@@ -12,7 +13,7 @@ struct AirportOverviewView: View {
 
     var body: some View {
         ScreenScaffold("Airport Overview", trailing: AnyView(
-            Button(action: onExitToMenu) {
+            Button(action: { showExitConfirm = true }) {
                 Text("Menu").font(.system(size: 14, weight: .semibold)).foregroundColor(Brand.sky)
             })) {
 
@@ -126,6 +127,12 @@ struct AirportOverviewView: View {
                 }
                 .environmentObject(store)
             }
+        }
+        .alert(isPresented: $showExitConfirm) {
+            Alert(title: Text("Return to Main Menu?"),
+                  message: Text("You'll go back to the title screen. Your airport progress is saved automatically."),
+                  primaryButton: .default(Text("Return")) { onExitToMenu() },
+                  secondaryButton: .cancel())
         }
     }
 

@@ -58,7 +58,7 @@ struct MainMenuView: View {
             }
         }
         .sheet(isPresented: $showGuide) {
-            NavigationView { GuideView() }.navigationViewStyle(StackNavigationViewStyle())
+            NavigationView { GuideView(onClose: { showGuide = false }) }.navigationViewStyle(StackNavigationViewStyle())
         }
     }
 
